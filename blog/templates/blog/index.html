@@ -1,30 +1,36 @@
 {% extends "base.html" %}
 {% load static %}
+
 {% block title %}
-My Blog
-{% endblock %}
+My Blog 
+{% endblock %} 
+
 {% block css_files %}
-<link rel="stylesheet" href="{% static "blog/index.css"%}" />
-{% endblock %}
+    <link rel="stylesheet" href="{% static "blog/post.css"%}" /> 
+    <link rel="stylesheet" href="{% static "blog/index.css"%}" /> 
+{% endblock %} 
 
 {% block content %}
-
 <section id="welcome">
-    <header>
-    <img src="{% static "blog/images/impana.jpeg"%}"  alt="Impana-The Author of This Blog"/>
+  <header>
+    <img src="{% static "blog/images/impana.jpg"%}" alt="Impana-The Author of
+    This Blog"/>
     <h2>IMPANA'S BLOG</h2>
-    </header>
-    <p>Hi,I am Impana and I love to blog about tech and the world!</p>
+  </header>
+  <p>Hi,I am Impana and I love to blog about tech and the world!</p>
 </section>
 <section id="latest-posts">
-    <h2> My latest Thoughts</h2>
-    <ul>
-        {%include "blog/includes/post.html"%}
-    </ul>
+  <h2>My latest Thoughts</h2>
+  <ul>
+    {%include "blog/includes/post.html"%}
+  </ul>
 </section>
 <section id="about">
-    <h2>What I do</h2>
-    <p>I love programming, I love playing basket ball and exploring various technologies.</p>
-    <p>My goal is to keep growing and building projects and getting a good job </p>
+  <h2>What I do</h2>
+  <p>
+    I love programming, I love playing basket ball and exploring various
+    technologies.
+  </p>
+  <p>My goal is to keep growing and building projects and getting a good job</p>
 </section>
 {% endblock %}

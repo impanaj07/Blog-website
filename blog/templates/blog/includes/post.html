@@ -1,12 +1,14 @@
 {% load static %}
 <li>
     <article class="post">
-        <a href="">
-            <img src="{% static "blog/images/mountains.jpeg"%}"  alt="Computer Science"/>
+        <a href="{%url "post-detail-page" "the-mountains"%}">
+            <img src="{% static "blog/images/mountains.jpg"%}" alt="Mountain Hiking" />
             <div class="post__content">
-            <h3>Computer Science</h3>
-            <p>bla bla bla for now </p>
-        </div>
+                <h3>Mountain Hiking</h3>
+                <p>insert somethings about the mountains and for now i just want to 
+                    get done with this project by tomorrow 
+                </p>
+            </div>
         </a>
     </article>
 </li>
